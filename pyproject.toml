@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "watermarkpdf"
+version = "0.1.0"
+description = ""
+authors = ["colin99d <colin99delahunty@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+PyPDF2 = "^3.0.1"
+reportlab = "^3.6.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 122
+target-version = "py38"
+select = ["E", "W", "F", "Q", "S", "UP", "I", "PLC", "PLE", "PLR", "PLW"]
